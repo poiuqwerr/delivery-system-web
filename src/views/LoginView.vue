@@ -1,8 +1,10 @@
 <template>
   <div class="login" id="login-app">
     <div class="login-box">
-      <img src="@/images/login/login-l.png" alt="" class="xiashi" s>
+      <img src="@/images/login/login-l.png" alt="" class="xiashi"
+           style="border-right: 2px solid  rgb(235, 239, 240);border-radius: 12px;">
       <div class="login-form" style="position: relative;">
+
 
         <div class="erweima">
           <img src="../images/tips1.png" alt="" style="width:200px; position: absolute; top: 2px; right: 45px;">
