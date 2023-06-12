@@ -11,6 +11,7 @@ import OrderManagement from "./views/OrderManagement.vue";
 import AddEmployee from "@/components/AddEmployee";
 import AddDish from "@/components/AddDish";
 import ElementUITableTest from "@/views/ElementUITableTest";
+import ErWeiMa from "@/views/ErWeiMa";
 
 Vue.use(Router);
 
@@ -20,6 +21,11 @@ export default new Router({
             path: "/",
             name: "login",
             component: Login,
+        },
+        {
+            path: "/erweima",
+            name: "erweima",
+            component: ErWeiMa,
         },
         {
             path: "/dashboard",

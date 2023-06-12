@@ -2,7 +2,15 @@
   <div class="login" id="login-app">
     <div class="login-box">
       <img src="@/images/login/login-l.png" alt="">
-      <div class="login-form">
+      <div class="login-form" style="position: relative;">
+
+        <div class="erweima">
+          <img src="../images/tips1.png" alt="" style="width:200px; position: absolute; top: 2px; right: 45px;">
+          <img src="../images/erweima.png" alt=""
+               style="width: 50px; height: 50px;  position: absolute; top: 2px; right: 2px;"
+               @click="tiaozhuan"
+          >
+        </div>
         <div class="login-container">
           <!--
                 <el-form>标签：这是一个Element UI中的表单组件，用于收集用户输入数据。
@@ -96,6 +104,10 @@ export default {
   },
   methods: {
     ...mapActions('employee', ['updateUserInfo', 'clearUserInfo']),
+
+    tiaozhuan(){
+      this.$router.push('/erweima')
+    },
 
     async handleLogin() {
       this.$refs.loginForm.validate(async (valid) => {
