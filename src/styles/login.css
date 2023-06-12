@@ -111,9 +111,13 @@
   .login-form{
     margin: auto;
     float: none;
-    width: 390px;
-    height: 450px;
+    min-width: 350px;
+    min-height: 430px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .login-form .login-container .el-button--primary{
+    margin-top: 54px;
   }
 }
