@@ -1,8 +1,22 @@
 <template>
   <div class="login" id="login-app">
     <div class="login-box">
-      <img src="@/images/login/login-l.png" alt="" class="xiashi"
-           style="border-right: 2px solid  rgb(235, 239, 240);border-radius: 12px;">
+<!--      <img src="@/images/login/login-l.png" alt="" class="xiashi"-->
+<!--           style="border-right: 2px solid  rgb(235, 239, 240);border-radius: 12px;">-->
+      <div class="block text-center zoumadeng" style="margin-right: 3px">
+        <el-carousel height="474.38px" style="border-radius: 12px">
+          <el-carousel-item v-for="item in arrImg" :key="item">
+            <!--            <h3 class="small justify-center" text="2xl">{{ item }}</h3>-->
+            <!--            <img src="@/images/Tips{{item}}.jpg" alt="" style="height: 474.38px">-->
+            <el-image :src="item" style="height: 474.38px">
+
+            </el-image>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+
+
+
       <div class="login-form" style="position: relative;">
 
 
@@ -79,6 +93,14 @@ export default {
       },
       loading: false,
       // apiBaseUrl: process.env.VUE_APP_API_BASE_URL
+
+      arrImg:[
+        //动态添加数据是require
+        require("../images/Tips1.jpg"),
+        require("../images/Tips2.jpg"),
+        require("../images/Tips3.jpg"),
+        require("../images/Tips4.jpg")
+      ]
     };
   },
   computed: {
